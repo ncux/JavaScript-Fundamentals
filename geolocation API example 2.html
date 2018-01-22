@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Geolocation API Example 2</title>
+
+</head>
+<body>
+
+<p id="infoDisplay">Click the button below to get your location.</p> <br>
+<button onclick="getLocation()">Get location!</button>
+
+<script>
+
+    var infoDisplay = document.querySelector("#infoDisplay");
+
+    function getLocation() {
+        if (navigator.geolocation) {
+            navigator.geolocation.getCurrentPosition(showPosition);
+        } else {
+            infoDisplay.innerHTML="Couldn't get your location.";
+        }
+    }
+    
+    function showPosition(position) {
+        infoDisplay.innerHTML="Latitude: " + position.coords.latitude +
+            "<br>Longitude: " + position.coords.longitude;
+    }
+
+</script>
+
+</body>
+</html>

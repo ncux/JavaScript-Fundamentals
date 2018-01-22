@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Events handling intro 3.html</title>
+</head>
+
+<body>
+<button id="myButton">Click me, this will work only once!</button>
+<p></p>
+<script>
+    var b = document.querySelector("#myButton");
+    b.addEventListener('click', processClick);
+
+    function processClick() {
+        alert("Button clicked, event listener removed; click on the button again: nothing will happen anymore!");
+        b.removeEventListener('click', processClick);
+    }
+</script>
+</body>
+
+</html>

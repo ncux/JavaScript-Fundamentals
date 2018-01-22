@@ -1,0 +1,19 @@
+
+body {
+    background-color: aliceblue;
+}
+
+h2 {
+    text-align: center;
+}
+
+#plot {
+    border: 3px solid darkgray;
+    border-radius: 1rem;
+    float: left;
+    height: 360px;
+    padding: 20px;
+    margin: 10px;
+    box-shadow: 4px 4px 4px teal;
+}
+

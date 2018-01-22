@@ -1,0 +1,28 @@
+
+fieldset {
+    padding:10px;
+    border-radius:10px;
+}
+
+label {
+    display:inline-block;
+    margin-bottom:10px;
+}
+
+input {
+    float:right;
+    margin-right:50rem;
+    width:150px;
+}
+
+input:invalid {
+    background-color:red;
+}
+
+input:valid {
+    background-color:teal;
+}
+
+button {
+    border-radius: 1rem;
+}

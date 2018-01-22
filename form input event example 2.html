@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>form input event example 2</title>
+    <script src="form input event example 2.js"></script>
+</head>
+<body>
+
+<h1>Simple <code>&lt;input type=range&gt;</code> field validation using the 'input' event</h1>
+<p>Just move the slider</p>
+<label>
+    Value:
+    1 <input type="range"
+             min=1
+             max=12
+             step=0.1
+             oninput = "doSomething(event)"> 12
+</label>
+<p>
+    <span id="sliderValue"></span>
+</p>
+
+</body>
+</html>

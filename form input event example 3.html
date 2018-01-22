@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>form input event example 3</title>
+    <script src="form input event example 3.js"></script>
+</head>
+<body>
+
+<h1></h1>
+<p>Pick a color to change the background color of the page</p>
+<label>
+    Click the box to select a color:
+    <input type="color"
+           onchange = "changePageBackgroundColor(this.value);">
+    <!-- we could have used oninput= in the previous line -->
+</label>
+<p>
+    <span id="chosenColor"></span>
+</p>
+
+</body>
+</html>

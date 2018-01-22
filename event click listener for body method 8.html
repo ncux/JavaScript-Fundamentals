@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>event click listener for body method 8</title>
+</head>
+<body>
+
+<button id="buttonId">Click here!</button>
+
+<script>
+    let clickHere = document.querySelector("#buttonId");
+    clickHere.addEventListener('click', onceClicker);
+
+    function onceClicker() {
+        alert("You clicked; it's once!");
+
+        clickHere.removeEventListener('click', onceClicker);
+    }
+
+
+</script>
+
+</body>
+</html>

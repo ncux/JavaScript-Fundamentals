@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>form input event example</title>
+    <script src="form input event example.js"></script>
+</head>
+<body>
+<h1>Simple input field validation using the 'input' event</h1>
+<p>Just type a name in the input field and see what happens!</p>
+<label>
+    <span>Name (required):</span>
+    <input type="text"
+           name="nom"
+           maxlength="32"
+           required
+           oninput = "validateName(this)">
+</label>
+<p>
+    <span id="nameTyped"></span>
+</p>
+</body>
+</html>
